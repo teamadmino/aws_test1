@@ -1,0 +1,3 @@
+[submodule "src/main/java/com/teamadmino/admino_backend"]
+	path = src/main/java/com/teamadmino/admino_backend
+	url = https://github.com/teamadmino/admino_backend
