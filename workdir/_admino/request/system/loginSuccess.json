@@ -1,0 +1,74 @@
+{
+  "setPing":1000,
+  "setScreen": {
+    "id":"_admino:system/loginSuccess",
+    "elements": [
+          {
+            "type": "text",
+            "id": "label",
+            "size": "36px",
+            "color": "primary",
+            "weight": "300",
+            "value": "Successful login"
+          },
+          {
+            "type": "input",
+            "id": "firstname",
+            "label": "Firstname",
+            "readonly":true,
+            "value": ""
+          },
+          {
+            "type": "input",
+            "id": "lastname",
+            "label": "Lastname",
+            "readonly":true,
+            "value": ""
+          },
+          {
+            "type": "input",
+            "id": "host",
+            "label": "Logged in from host",
+            "readonly":true,
+            "value": ""
+          },
+          {
+            "type": "input",
+            "id": "ip",
+            "label": "Logged in from ip",
+            "readonly":true,
+            "value": ""
+          },
+          {
+            "type": "input",
+            "id": "time",
+            "label": "Logged in time",
+            "readonly":true,
+            "value": ""
+          }
+/*
+          {
+            "type": "button",
+            "id": "myprofile",
+            "icon":"person",
+            "label": "My profile",
+            "action": {"type": "backend","backendAction": "_admino:system/myprofile"}
+          },
+          {
+            "type": "button",
+            "id": "myhistory",
+            "icon":"list",
+            "label": "Login history",
+            "action": {"type": "backend","backendAction": "_admino:system/myhistory"}
+          },
+          {
+            "type": "button",
+            "id": "myprofile",
+            "icon":"timeline",
+            "label": "Activity stats",
+            "action": {"type": "backend","backendAction": "_admino:system/myactivity"}
+          }
+*/
+    ]
+  }
+}

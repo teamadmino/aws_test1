@@ -1,0 +1,31 @@
+{
+    "setBottomButtons": [{
+        "icon": "dvr",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsEditor",
+            "type": "backend"
+        },
+        "label": "Screen Editor"
+    }, {
+        "icon": "brightness_2",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsTheme",
+            "type": "backend"
+        },
+        "label": "Set Theme"
+    }, {
+        "icon": "close",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsMain",
+            "type": "backend"
+        },
+        "label": "Close Toolbox"
+    }, {
+        "icon": "exit_to_app",
+        "action": {
+            "frontendAction": "logout",
+            "type": "frontend"
+        },
+        "label": "Logout"
+    }]
+}

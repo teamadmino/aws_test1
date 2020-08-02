@@ -1,0 +1,44 @@
+{
+  "setScreen": {
+    "id":"_admino:developer/requestChecker",
+    "elements": [
+      {
+        "type": "input",
+        "id": "name",
+        "label": "Request fileName (.json)"
+      },
+      {
+        "type": "button",
+        "id": "analyse",
+        "breakBefore": true,
+        "icon":"zoom_in",
+        "label": "Analyse",
+        "action": {
+          "type": "backend",
+          "backendAction": "_admino:developer/requestAnalyse"
+        }
+      },
+      {
+        "type": "button",
+        "id": "run",
+        "breakBefore": true,
+        "icon":"play_circle_filled",
+        "label": "Play",
+        "action": {
+          "type": "backend",
+          "backendAction": "_admino:developer/requestPlay"
+        }
+      },
+      {
+        "type": "text",
+        "id":"label",
+        "value": "Result:"
+      },
+      {
+        "type": "text",
+        "id": "result",
+        "value": ""
+      }
+    ]
+  }
+}

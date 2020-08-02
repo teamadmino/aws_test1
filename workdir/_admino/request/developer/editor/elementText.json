@@ -1,0 +1,363 @@
+{
+  "updateScreen": {
+    "elements": [
+      {
+        "id": "_editor/text",
+        "type": "group",
+        "isPopup": true,
+        "showBorder": true,
+        "verticalPosition": "center",
+        "width": "80%",
+        "horizontalPosition": "center",
+        "allowClose": true,
+        "elements": [
+          {
+            "row": 1,
+            "type": "text",
+            "id": "title",
+            "value": "<span class='font-size-xxxl color-accent'>Text Element</span>"
+          },
+          {
+            "row": 2,
+            "col": 1,
+            "colSpan": 6,
+            "type": "input",
+            "label": "Enter text to display here",
+            "id": "textvalue",
+            "value": "",
+            "changeAction": {
+              "type": "backend",
+              "backendAction": "_admino:developer/editor/text"
+            }
+          },
+          {
+            "row": 2,
+            "col": 7,
+            "colSpan": 6,
+            "type": "input",
+            "label": "Element ID",
+            "id": "textid",
+            "value": ""
+          },
+          //------------------------------------ Size / Color / Background
+          {
+            "type": "group",
+            "id": "size",
+            "showBorder": true,
+            "col": 1,
+            "colSpan": 4,
+            "row": 3,
+            "elements": [
+              {
+                "row": 1,
+                "col": 1,
+                "type": "radiobutton",
+                "value": "Default",
+                "id": "textsize",
+                "label": "Text Size",
+                "inlineLabel": false,
+                "changeAction": {
+                  "type": "backend",
+                  "backendAction": "_admino:developer/editor/text"
+                },
+                "options": [
+                  {
+                    "value": "Small",
+                    "label": "Small"
+                  },
+                  {
+                    "value": "Default",
+                    "label": "Default"
+                  },
+                  {
+                    "value": "Large",
+                    "label": "Large"
+                  },
+                  {
+                    "value": "Extra Large",
+                    "label": "Extra Large"
+                  },
+                  {
+                    "value": "Custom...",
+                    "label": "Custom..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "id": "color",
+            "showBorder": true,
+            "col": 5,
+            "colSpan": 4,
+            "row": 3,
+            "elements": [
+              {
+                "row": 1,
+                "col": 1,
+                "type": "radiobutton",
+                "value": "Default",
+                "id": "textcolor",
+                "label": "Text Color",
+                "inlineLabel": false,
+                "changeAction": {
+                  "type": "backend",
+                  "backendAction": "_admino:developer/editor/text"
+                },
+                "options": [
+                  {
+                    "value": "Default",
+                    "label": "Default"
+                  },
+                  {
+                    "value": "Primary",
+                    "label": "Primary"
+                  },
+                  {
+                    "value": "Accent",
+                    "label": "Accent"
+                  },
+                  {
+                    "value": "Warn",
+                    "label": "Warn"
+                  },
+                  {
+                    "value": "Custom...",
+                    "label": "Custom..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "id": "background",
+            "showBorder": true,
+            "col": 9,
+            "colSpan": 4,
+            "row": 3,
+            "elements": [
+              {
+                "row": 1,
+                "col": 1,
+                "type": "radiobutton",
+                "value": "Default",
+                "id": "textbackground",
+                "label": "Text Background",
+                "inlineLabel": false,
+                "changeAction": {
+                  "type": "backend",
+                  "backendAction": "_admino:developer/editor/text"
+                },
+                "options": [
+                  {
+                    "value": "Default",
+                    "label": "Default"
+                  },
+                  {
+                    "value": "Primary",
+                    "label": "Primary"
+                  },
+                  {
+                    "value": "Accent",
+                    "label": "Accent"
+                  },
+                  {
+                    "value": "Warn",
+                    "label": "Warn"
+                  },
+                  {
+                    "value": "Custom...",
+                    "label": "Custom..."
+                  }
+                ]
+              }
+            ]
+          },
+          //------------------------------------ Font / Weight / Opacity
+          {
+            "type": "group",
+            "id": "font",
+            "showBorder": true,
+            "col": 1,
+            "colSpan": 4,
+            "row": 4,
+            "elements": [
+              {
+                "row": 1,
+                "col": 1,
+                "type": "radiobutton",
+                "value": "Default",
+                "id": "textfont",
+                "label": "Font type",
+                "inlineLabel": false,
+                "changeAction": {
+                  "type": "backend",
+                  "backendAction": "_admino:developer/editor/text"
+                },
+                "options": [
+                  {
+                    "value": "Default",
+                    "label": "Default"
+                  },
+                  {
+                    "value": "Monospace",
+                    "label": "Monospace"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "id": "weight",
+            "showBorder": true,
+            "col": 5,
+            "colSpan": 4,
+            "row": 4,
+            "elements": [
+              {
+                "row": 1,
+                "col": 1,
+                "type": "radiobutton",
+                "value": "Default",
+                "id": "textweight",
+                "label": "Font Weight",
+                "inlineLabel": false,
+                "changeAction": {
+                  "type": "backend",
+                  "backendAction": "_admino:developer/editor/text"
+                },
+                "options": [
+                  {
+                    "value": "Default",
+                    "label": "Default"
+                  },
+                  {
+                    "value": "300",
+                    "label": "300"
+                  },
+                  {
+                    "value": "500",
+                    "label": "500"
+                  },
+                  {
+                    "value": "700",
+                    "label": "700"
+                  },
+                  {
+                    "value": "900",
+                    "label": "900"
+                  },
+                  {
+                    "value": "Custom...",
+                    "label": "Custom..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "type": "group",
+            "id": "opacity",
+            "showBorder": true,
+            "col": 9,
+            "colSpan": 4,
+            "row": 4,
+            "elements": [
+              {
+                "row": 1,
+                "rowSpan": 8,
+                "col": 1,
+                "type": "radiobutton",
+                "value": "Default",
+                "id": "textopacity",
+                "label": "Opacity",
+                "inlineLabel": false,
+                "changeAction": {
+                  "type": "backend",
+                  "backendAction": "_admino:developer/editor/text"
+                },
+                "options": [
+                  {
+                    "value": "Default",
+                    "label": "Default"
+                  },
+                  {
+                    "value": "30",
+                    "label": "30"
+                  },
+                  {
+                    "value": "50",
+                    "label": "50"
+                  },
+                  {
+                    "value": "70",
+                    "label": "70"
+                  },
+                  {
+                    "value": "90",
+                    "label": "90"
+                  },
+                  {
+                    "value": "Custom...",
+                    "label": "Custom..."
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "row": 5,
+            "id": "previewButton",
+            "type": "button",
+            "label": "Preview",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:developer/editor/textPreview"
+            }
+          },
+          //          {
+          //            "row": 5,
+          //            "id": "previewLabel",
+          //            "type": "text",
+          //            "value": "<span class='font-size-xxxl color-accent'>Preview:</span>"
+          //          },
+          {
+            "row": 5,
+            "col": 4,
+            "id": "preview",
+            "type": "text",
+            "value": ""
+          },
+          {
+            "row": 6,
+            "col": 1,
+            "id": "addnewrow",
+            "type": "button",
+            "label": "Add to new row",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:developer/editor/textNewRow"
+            }
+          },
+          {
+            "row": 6,
+            "col": 4,
+            "id": "addsamerow",
+            "type": "button",
+            "label": "Append to the last row"
+          },
+          {
+            "row": 6,
+            "col": 12,
+            "id": "cancel",
+            "type": "button",
+            "label": "Cancel"
+          }
+        ]
+      }
+    ]
+  }
+}

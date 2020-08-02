@@ -1,0 +1,131 @@
+{
+  "setScreen": {
+    "id": "_admino:menuBuilder/main",
+    "elements": [
+      {
+        "id": "title",
+        "type": "text",
+        "value":"Administrator Tools - Menu Builder"
+      },
+      {
+        "type": "table",
+        "id": "menu",
+        "viewName": "_menu",
+        "columns": [
+          {
+            "id": "name",
+            "description": "Internal name",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 30
+          },
+          {
+            "id": "title",
+            "description": "Label text",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 20
+          },
+          {
+            "id": "parent",
+            "description": "Parent name",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 30
+          },
+          {
+            "id": "icon",
+            "description": "Optional icon",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 10
+          },
+          {
+            "id": "action",
+            "description": "Menu action",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 30
+          }
+        ],
+        "indexes": [
+          {
+            "keys": [
+              "name"
+            ],
+            "description": "Internal name"
+          },
+          {
+            "keys": [
+              "parent",
+              "name"
+            ],
+            "description": "Parent"
+          },
+          {
+            "keys": [
+              "title",
+              "name"
+            ],
+            "description": "Title"
+          }
+        ],
+        "tableButtons": [
+          {
+            "id": "sibling",
+            "label": "Create New Sibling",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:menuBuilder/addSibling"
+            }
+          },
+          {
+            "id": "child",
+            "label": "Add Child",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:menuBuilder/addChild"
+            }
+          },
+          {
+            "id": "delete",
+            "label": "Delete",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:menuBuilder/delete"
+            }
+          },
+          {
+            "id": "savetodisk",
+            "label": "Save to disk",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:menuBuilder/save"
+            }
+          },
+          {
+            "id": "updatepos",
+            "label": "Update test",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:menuBuilder/update"
+            }
+          },
+          {
+            "id": "apply",
+            "label": "Redraw Menu",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:menuBuilder/apply"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,61 @@
+{
+    "setBottomButtons": [
+    {
+        "icon": "desktop_mac",
+        "action": {
+            "backendAction": "_admino:developer/newScreen",
+            "type": "backend"
+        },
+        "label": "New Empty Screen"
+    },
+    {
+        "icon": "add",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsEditorAdd",
+            "type": "backend"
+        },
+        "label": "Add Element"
+    },
+    {
+        "icon": "chrome_reader_mode",
+        "action": {
+            "backendAction": "_admino:developer/check",
+            "type": "backend",
+            "includeSchema":true
+        },
+        "label": "Show Schema"
+    },
+    {
+        "icon": "zoom_in",
+        "action": {
+            "backendAction": "_admino:developer/inspector",
+            "type": "backend"
+        },
+        "label": "Inspector"
+    },
+    {},
+    {
+        "icon": "keyboard_backspace",
+        "action": {
+            "backendAction": "_admino:developer/tools",
+            "type": "backend"
+        },
+        "label": "ToolBox Main"
+    },
+    {
+        "icon": "close",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsMain",
+            "type": "backend"
+        },
+        "label": "Close Toolbox"
+    },
+    {
+        "icon": "exit_to_app",
+        "action": {
+            "frontendAction": "logout",
+            "type": "frontend"
+        },
+        "label": "Logout"
+    }]
+}

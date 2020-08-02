@@ -1,0 +1,60 @@
+{
+  "setHandlerClass": "com.teamadmino.admino_backend.server.plugins.AdminoLogin",
+  "setPing":0,
+  "setFocus":{"logingroup":{"user":true}},
+  "setScreen": {
+    "id": "_admino:system/login",
+    "elements": [
+      {
+        "id": "logo",
+        "type": "image",
+        "src": "./assets/fbzlogo.png",
+        "height": "100px",
+        "width": "105px",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "id": "label",
+        "size": "2em",
+        "weight": "300",
+        "value": "Bejelentkezés",
+        "align": "center",
+        "color": "primary"
+      },
+      {
+        "id": "logingroup",
+        "type": "group",
+        "colSpan": 6,
+        "col": 4,
+        "showBorder": true,
+        "elements": [
+          {
+            "type": "input",
+            "id": "user",
+            "label": "Username"
+          },
+          {
+            "type": "input",
+            "inputType": "password",
+            "id": "password",
+            "label": "Password"
+          }
+        ]
+      },
+      {
+        "colSpan": 12,
+        "col": 1,
+        "type": "button",
+        "id": "login",
+        "icon": "account_circle",
+        "label": "Bejelentkezés",
+        "align": "center",
+        "action": {
+          "type": "backend",
+          "backendAction": "_admino:system/loginValidation"
+        }
+      }
+    ]
+  }
+}

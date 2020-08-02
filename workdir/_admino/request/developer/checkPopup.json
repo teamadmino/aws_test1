@@ -1,0 +1,32 @@
+{
+  "updateScreen": {
+    "elements": [
+      {
+        "id": "_schemaView",
+        "type":"group",
+        "isPopup":true,
+        "showBorder": true,
+        "verticalPosition": "center",
+        "width":"80%",
+        "horizontalPosition": "center",
+        "allowClose": true,
+          "elements": [
+            {
+              "type":"text",
+              "id":"_schemaView/title",
+              "value":"Screen Schema"
+            },
+            {
+              "type":"textarea",
+              "id":"_schemaView/message",
+              "value":"{}",
+              "rows":10,
+              "readonly": true
+            }
+          ]
+
+      }
+
+    ]
+  }
+}

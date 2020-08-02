@@ -1,0 +1,36 @@
+{
+  "setFocus":{
+     "user":true
+  },
+  "setPing":0,
+  "setScreen": {
+    "elements": [
+      {
+        "id": "text_1",
+        "type": "text",
+        "value": "<span class='font-size-xxxl color-primary'>Account Update Notice<\/span>"
+      },
+      {
+        "id": "text_2",
+        "type": "text",
+        "value": "<span class='font-size-lg color-primary'>Your account access rights has been update<\/span>"
+      },
+      {
+        "id": "text_3",
+        "type": "text",
+        "value": "<span class='font-size-lg color-primary'>Your current session heas been terminated<\/span>"
+      },
+    {
+      "action": {
+        "frontendAction": "logout",
+        "type": "frontend"
+      },
+      "id": "login",
+      "label": "Login again to continue",
+      "type": "button"
+    }
+
+    ],
+    "id": "screenId"
+  }
+}

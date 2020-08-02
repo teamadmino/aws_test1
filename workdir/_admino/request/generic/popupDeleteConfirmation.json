@@ -1,0 +1,81 @@
+{
+  "updateScreen": {
+    "popups": [
+      {
+        "id": "popup",
+        "showBorder": true,
+        "verticalPosition": "top",
+        "width":"50%",
+        "horizontalPosition": "right",
+        "setScreen": {
+          "showBorder": true,
+          "elements": [
+            {
+              "type":"text",
+              "id":"title",
+              "value":"Delete Confirmation Required"
+            },
+            {
+              "type":"text",
+              "hidden":true,
+              "id":"arg1",
+              "value":"#arg1#"
+            },
+            {
+              "type":"text",
+              "hidden":true,
+              "id":"arg2",
+              "value":"#arg2#"
+            },
+            {
+              "type":"text",
+              "hidden":true,
+              "id":"arg3",
+              "value":"#arg3#"
+            },
+            {
+              "type":"text",
+              "hidden":true,
+              "id":"arg4",
+              "value":"#arg4#"
+            },
+            {
+              "type": "input",
+              "id": "readonly1",
+              "label": "",
+              "readonly": true,
+              "value": ""
+            },
+            {
+              "type": "input",
+              "id": "readonly2",
+              "label": "",
+              "readonly": true,
+              "value": ""
+            },
+            {
+              "type": "button",
+              "id": "cancelButton",
+              "label": "Cancel",
+              "icon": "cancel",
+              "action": {
+                "type": "backend",
+                "backendAction": "_admino:generic/closePopup"
+              }
+            },
+            {
+              "type": "button",
+              "id": "deleteButton",
+              "label": "Delete",
+              "icon":"backspace",
+              "action": {
+                "type": "backend",
+                "backendAction": ""
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

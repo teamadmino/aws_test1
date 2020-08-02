@@ -1,0 +1,10 @@
+{
+  "updateScreen": {
+    "elements": [
+      {
+        "id": "result",
+        "value":""
+      }
+    ]
+  }
+}

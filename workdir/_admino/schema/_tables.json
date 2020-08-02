@@ -1,0 +1,30 @@
+{
+  "name": "_tables",
+  "type":"schema",
+  "description": "Database tables",
+  "blocksize": 1000,
+  "indexes": [
+    {"keys":["name"],"description":"Table name"},
+    {"keys":["description","name"],"description":"Table description"},
+  ],
+  "fields": [
+    {
+      "count": 1,
+      "name": "name",
+      "description": "name",
+      "datatype": "string",
+      "datasize": 10,
+      "textformat": "string",
+      "textlength": 10
+    },
+    {
+      "count": 1,
+      "name": "description",
+      "description": "description",
+      "datatype": "string",
+      "datasize": 30,
+      "textformat": "string",
+      "textlength": 30
+    }
+  ]
+}

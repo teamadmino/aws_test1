@@ -1,0 +1,10 @@
+{
+  "setScreen": {
+    "allowTabOut":false,
+    "id": "page1",
+    "type":"group","elements":[
+       {"id":"title","type":"text","value":"Page1","style":{"color":"#AA8800","fontSize":"30px","fontWeight":100}},
+       {"id":"button","type":"button","label":"Go to Page2","action":{"type":"backend","backendAction":"_test:test2"}}
+    ]
+  }
+}

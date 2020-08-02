@@ -1,0 +1,31 @@
+{
+  "setFocus":{
+     "user":true
+  },
+  "setPing":0,
+  "setScreen": {
+    "elements": [
+      {
+        "id": "text_1",
+        "type": "text",
+        "value": "<span class='font-size-xxxl color-warn'>Account Suspension Notice<\/span>"
+      },
+      {
+        "id": "text_2",
+        "type": "text",
+        "value": "<span class='font-size-lg color-primary'>Your account has been suspended<\/span>"
+      },
+    {
+      "action": {
+        "frontendAction": "logout",
+        "type": "frontend"
+      },
+      "id": "login",
+      "label": "Login to different account",
+      "type": "button"
+    }
+
+    ],
+    "id": "screenId"
+  }
+}

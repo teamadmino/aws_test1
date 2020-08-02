@@ -1,0 +1,47 @@
+{
+  "name": "_buttons",
+  "type":"memory",
+  "description": "Admino quick access buttons",
+  "blocksize": 100,
+  "indexes": [
+    {"keys":["id"],"description":"Position"}
+  ],
+  "fields": [
+    {
+      "count": 1,
+      "name": "id",
+      "description": "Position",
+      "datatype": "int32",
+      "datasize": 4,
+      "textformat": "number",
+      "textlength": 2
+    },
+    {
+      "count": 1,
+      "name": "title",
+      "description": "Label text",
+      "datatype": "string",
+      "datasize": 30,
+      "textformat": "string",
+      "textlength": 30
+    },
+    {
+      "count": 1,
+      "name": "icon",
+      "description": "Optional icon name",
+      "datatype": "string",
+      "datasize": 20,
+      "textformat": "string",
+      "textlength": 20
+    },
+    {
+      "count": 1,
+      "name": "action",
+      "description": "Button action",
+      "datatype": "string",
+      "datasize": 30,
+      "textformat": "string",
+      "textlength": 30
+    }
+  ]
+}

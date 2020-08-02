@@ -1,0 +1,79 @@
+{
+    "setBottomButtons": [
+    {
+        "action": {
+            "backendAction": "_admino:developer/editor/elementText",
+            "type": "backend"
+        },
+        "label": "Static Text"
+    },
+    {
+        "action": {
+            "backendAction": "_admino:developer/newScreen",
+            "type": "backend"
+        },
+        "label": "Simple Text Input"
+    },
+    {
+        "action": {
+            "backendAction": "_admino:developer/newScreen",
+            "type": "backend"
+        },
+        "label": "MultiLine Input"
+    },
+    {
+        "action": {
+            "backendAction": "_admino:developer/newScreen",
+            "type": "backend"
+        },
+        "label": "Date Selection"
+    },
+
+    {
+        "action": {
+            "backendAction": "_admino:developer/newScreen",
+            "type": "backend"
+        },
+        "label": "Button"
+    },
+    {
+        "action": {
+            "backendAction": "_admino:developer/newScreen",
+            "type": "backend"
+        },
+        "label": "Radio Button"
+    },
+    {
+        "action": {
+            "backendAction": "_admino:developer/newScreen",
+            "type": "backend"
+        },
+        "label": "Table View"
+    },
+
+    {},
+    {
+        "icon": "keyboard_backspace",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsEditor",
+            "type": "backend"
+        },
+        "label": "Editor Main"
+    },
+    {
+        "icon": "close",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsMain",
+            "type": "backend"
+        },
+        "label": "Close Toolbox"
+    },
+    {
+        "icon": "exit_to_app",
+        "action": {
+            "frontendAction": "logout",
+            "type": "frontend"
+        },
+        "label": "Logout"
+    }]
+}

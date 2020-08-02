@@ -1,0 +1,76 @@
+{
+    "setBottomButtons": [
+    {
+        "icon": "brightness_2",
+        "action": {
+            "backendAction": "_admino:developer/setThemeGoldDark",
+            "type": "backend"
+        },
+        "label": "Gold Dark"
+    },
+    {
+        "icon": "wb_sunny",
+        "action": {
+            "backendAction": "_admino:developer/setThemeGoldLight",
+            "type": "backend"
+        },
+        "label": "Gold Light"
+    },
+    {
+        "icon": "brightness_2",
+        "action": {
+            "backendAction": "_admino:developer/setThemeBlueDark",
+            "type": "backend"
+        },
+        "label": "Blue Dark"
+    },
+    {
+        "icon": "wb_sunny",
+        "action": {
+            "backendAction": "_admino:developer/setThemeBlueLight",
+            "type": "backend"
+        },
+        "label": "Blue Light"
+    },
+    {
+        "icon": "brightness_2",
+        "action": {
+            "backendAction": "_admino:developer/setThemePurpleDark",
+            "type": "backend"
+        },
+        "label": "Purple Dark"
+    },
+    {
+        "icon": "wb_sunny",
+        "action": {
+            "backendAction": "_admino:developer/setThemePurpleLight",
+            "type": "backend"
+        },
+        "label": "Purple Light"
+    },
+    {},
+    {
+        "icon": "keyboard_backspace",
+        "action": {
+            "backendAction": "_admino:developer/tools",
+            "type": "backend"
+        },
+        "label": "ToolBox Main"
+    },
+    {
+        "icon": "close",
+        "action": {
+            "backendAction": "_admino:developer/developerButtonsMain",
+            "type": "backend"
+        },
+        "label": "Close Toolbox"
+    },
+    {
+        "icon": "exit_to_app",
+        "action": {
+            "frontendAction": "logout",
+            "type": "frontend"
+        },
+        "label": "Logout"
+    }]
+}

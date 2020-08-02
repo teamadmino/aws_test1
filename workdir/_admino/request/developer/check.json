@@ -1,0 +1,35 @@
+{
+  "updateScreen": {
+    "popups": [
+      {
+        "id": "popupid",
+        "hidden":true,
+        "showBorder": true,
+        "verticalPosition": "bottom",
+        "width":"100%",
+        "horizontalPosition": "center",
+        "setScreen": {
+          "showBorder": true,
+          "elements": [
+            {
+              "type":"text",
+              "id":"_check/title",
+              "value":"Check"
+            },
+            {
+              "type":"textarea",
+              "id":"_check/message",
+              "value":"check\nyyy"
+            },
+            {
+              "type":"button",
+              "id":"_check/button",
+              "label":"button",
+              "action":{"type":"backend","backendAction":"_admino:developer/checkPopupButton"}
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

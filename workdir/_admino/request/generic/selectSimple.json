@@ -1,0 +1,28 @@
+{
+  "setHandlerClass": "com.teamadmino.admino_backend.server.plugins.PluginSelectSimple",
+  "setScreen":
+  {
+    "allowTabOut":false,
+    "isFluidContainer": true,
+    "innerStyle":{"padding": "0px"},
+    "elements": [
+      {"id":"inner","type":"group",
+        "innerStyle":{"padding": "0px"},
+        "style":{"width":"100%"},
+        "elements":[
+          {
+            "row":2,"colSpan":12,
+            "id":"list","type":"newtable",
+            "style": {"height": "282px","margin-top":0},
+            "selectedRowStyle": {"background": "#008888"},
+            "inactiveSelectedRowStyle": {"background": "#005555"},
+            "headerHeight":0,"hideHeader":true,"rowHeight":40,
+            "$overrideKeys":"Escape","$triggers":"cellClick cellDoubleClick"
+          }
+        ]
+      }
+    ],
+    "id": "smartsearch",
+    "style":{"width":"100%"}
+  }
+}

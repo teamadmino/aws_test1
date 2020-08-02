@@ -1,0 +1,38 @@
+{
+  "updateScreen": {
+    "popups": [
+      {
+        "id": "popup",
+        "showBorder": true,
+        "verticalPosition": "bottom",
+        "width":"100%",
+        "horizontalPosition": "center",
+        "setScreen": {
+          "showBorder": true,
+          "elements": [
+            {
+              "type":"text",
+              "id":"title",
+              "value":""
+            },
+            {
+              "type":"text",
+              "id":"message",
+              "value":""
+            },
+            {
+              "type": "button",
+              "id": "closeButton",
+              "label": "Close",
+              "icon": "check",
+              "action": {
+                "type": "backend",
+                "backendAction": "_admino:generic/closePopup"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

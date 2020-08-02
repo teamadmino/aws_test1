@@ -1,0 +1,10 @@
+{
+  "updateScreen": {
+    "popups": [
+      {
+        "id": "popup",
+        "destroy": true
+      }
+    ]
+  }
+}

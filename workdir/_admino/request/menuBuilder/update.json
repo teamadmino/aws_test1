@@ -1,0 +1,16 @@
+{
+  "updateScreen": {
+    "elements": [
+      {
+        "id": "menu",
+        "forceRefresh": true,
+        "value": {
+          "cursorPosPercent": 0.5,
+          "keys": {
+            "name":"_adminoSystem"
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "updateScreen": {
+    "popups": [
+      {
+        "id": "popup",
+        "showBorder": true,
+        "verticalPosition": "top",
+        "width":"50%",
+        "horizontalPosition": "right",
+        "setScreen": {
+          "showBorder": true,
+          "elements": [
+            {
+              "type":"text",
+              "id":"title",
+              "value":""
+            },
+            {
+              "type":"text",
+              "classes": ["color-warn"],
+              "id":"message",
+              "value":""
+            },
+            {
+              "type": "button",
+              "id": "closeButton",
+              "label": "Close",
+              "icon": "check",
+              "action": {
+                "type": "backend",
+                "backendAction": "_admino:generic/closePopup"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "setScreen": {
+    "id": "_admino:buttons/add",
+    "elements": [
+      {
+        "type": "text",
+        "id": "label",
+        "value": "Create new Quick Access Button"
+      },
+      {
+        "type": "text",
+        "id": "info",
+        "value": "* Mandatory fields:"
+      },
+      {
+        "type": "input",
+        "id": "title",
+        "label": "* Label text"
+      },
+      {
+        "type": "text",
+        "id": "info1",
+        "value": "Optional fields, you can update later"
+      },
+      {
+        "type": "input",
+        "id": "icon",
+        "label": "Optional icon"
+      },
+      {
+        "type": "input",
+        "id": "action",
+        "label": "Action"
+      },
+      {
+        "type": "button",
+        "id": "save",
+        "label": "Save",
+        "action": {
+          "type": "backend",
+          "backendAction": "_admino:buttons/insert"
+        }
+      },
+      {
+        "type": "button",
+        "id": "cancel",
+        "label": "Cancel",
+        "color": "accent",
+        "action": {
+          "type": "backend",
+          "backendAction": "_admino:buttons/main"
+        }
+      }
+    ]
+  }
+}

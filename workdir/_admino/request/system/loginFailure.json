@@ -1,0 +1,26 @@
+{
+  "setScreen": {
+        "id":"_admino:system/loginFailure",
+        "elements": [
+          {
+            "type":"text",
+            "id":"title",
+            "value":"Login failure"
+          },
+          {
+            "type":"text",
+            "id":"message",
+            "value":"message"
+          },
+          {
+            "type": "button",
+            "id": "login",
+            "label": "Retry Login",
+              "action": {
+                "type": "backend",
+                "backendAction": "_admino:system/login"
+               }
+          }
+        ]
+  }
+}

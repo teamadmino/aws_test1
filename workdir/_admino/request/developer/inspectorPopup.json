@@ -1,0 +1,31 @@
+{
+  "updateScreen": {
+    "popups": [
+      {
+        "id": "_inspector",
+        "hidden":true,
+        "showBorder": true,
+        "verticalPosition": "center",
+        "width":"70%",
+        "horizontalPosition": "center",
+        "setScreen": {
+          "showBorder": true,
+          "elements": [
+            {
+              "type":"text",
+              "id":"_inspector/title",
+              "value":"Screen Elements"
+            },
+            {
+              "type":"textarea",
+              "id":"_inspector/message",
+              "value":"",
+              "rows":10,
+              "readonly": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

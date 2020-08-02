@@ -1,0 +1,25 @@
+{
+  "flagSkipAuthentication":false,
+  "flagSidChecking":true,
+
+  "flagLogRequests":true,
+  "flagLogResponses":true,
+  "flagLogDisablePing":true,
+
+  "data":"./workdir",
+  "maxPayload":500000,
+
+  "backendHost":"localhost",
+  "backendPort":4080,
+  "useHttps":false,
+
+  "httpsKey":"admino.keystore",
+  "httpsPassword":"TeamAdmino2020",
+
+  "serveFrontend":true,
+  "frontendPort":4300,
+  "useSandbox":true,
+
+  "flagAllowUnknownElements":true
+
+}

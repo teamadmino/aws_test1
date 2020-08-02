@@ -1,0 +1,58 @@
+{
+  "name": "_menu2",
+  "type": "memory",
+  "description": "Admino system menu",
+  "blocksize": 1000,
+  "indexes": [
+    {"keys":["name"],"description":"Internal name"},
+    {"keys":["parent","name"],"description":"Parent"},
+    {"keys":["title","name"],"description":"Title"},
+  ],
+  "fields": [
+    {
+      "count": 1,
+      "name": "name",
+      "description": "Internal name",
+      "datatype": "string",
+      "datasize": 99,
+      "textformat": "string",
+      "textlength": 99
+    },
+    {
+      "count": 1,
+      "name": "title",
+      "description": "Label text",
+      "datatype": "string",
+      "datasize": 99,
+      "textformat": "string",
+      "textlength": 99
+    },
+    {
+      "count": 1,
+      "name": "parent",
+      "description": "Parent name",
+      "datatype": "string",
+      "datasize": 99,
+      "textformat": "string",
+      "textlength": 99
+    },
+    {
+      "count": 1,
+      "name": "icon",
+      "description": "Optional icon name",
+      "datatype": "string",
+      "datasize": 30,
+      "textformat": "string",
+      "textlength": 30
+    },
+    {
+      "count": 1,
+      "name": "action",
+      "description": "Menu action",
+      "datatype": "string",
+      "datasize": 99,
+      "textformat": "string",
+      "textlength": 99
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "setScreen": {
+    "id": "_admino:buttons/main",
+    "elements": [
+      {
+        "id": "title",
+        "type": "text",
+        "value":"Administrator Tools - Customize Quick Access Buttons"
+      },
+      {
+        "type": "table",
+
+        "tableHeight":400,
+        "tableRowHeight":20,
+        "hideSideBorder":true,
+        "hideBottomBorder":true,
+
+        "id": "buttons",
+        "viewName": "_buttons",
+        "columns": [
+          {
+            "id": "id",
+            "description": "Position",
+            "type": "int32",
+            "format": "",
+            "align": "left",
+            "length": 2
+          },
+          {
+            "id": "title",
+            "description": "Label text",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 30
+          },
+          {
+            "id": "icon",
+            "description": "Optional icon",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 20
+          },
+          {
+            "id": "action",
+            "description": "Button action",
+            "type": "string",
+            "format": "",
+            "align": "left",
+            "length": 30
+          }
+        ],
+        "indexes": [
+          {
+            "keys": [
+              "id"
+            ],
+            "description": "Position"
+          }
+        ],
+        "tableButtons": [
+          {
+            "id": "add",
+            "label": "Create New",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:buttons/add"
+            }
+          },
+          {
+            "id": "delete",
+            "label": "Delete",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:buttons/delete"
+            }
+          },
+          {
+            "id": "savetodisk",
+            "label": "Save to disk",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:buttons/save"
+            }
+          },
+          {
+            "id": "apply",
+            "label": "Redraw Buttons",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:buttons/apply"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

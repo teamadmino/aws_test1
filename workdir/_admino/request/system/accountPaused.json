@@ -1,0 +1,9 @@
+{
+  "startAction":[
+      {
+        "frontendAction": "logout",
+        "logoutScreen":"_admino:system/accoutPausedMessage",
+        "type": "frontend"
+      }
+  ]
+}

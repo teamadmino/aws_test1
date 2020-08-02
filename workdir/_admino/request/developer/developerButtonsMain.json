@@ -1,0 +1,17 @@
+{
+    "setBottomButtons": [{
+        "icon": "build",
+        "action": {
+            "backendAction": "_admino:developer/tools",
+            "type": "backend"
+        },
+        "label": "Developer Tools"
+    }, {
+        "icon": "exit_to_app",
+        "action": {
+            "frontendAction": "logout",
+            "type": "frontend"
+        },
+        "label": "Logout"
+    }]
+}

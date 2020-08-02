@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'admino';
+  src:
+    url('fonts/admino.ttf?9zjwqz') format('truetype'),
+    url('fonts/admino.woff?9zjwqz') format('woff'),
+    url('fonts/admino.svg?9zjwqz#admino') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="admino-icon-"], [class*=" admino-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'admino' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.admino-icon-file-csv:before {
+  content: "\e909";
+}
+.admino-icon-pencil:before {
+  content: "\e900";
+}
+.admino-icon-keyboard:before {
+  content: "\e901";
+}
+.admino-icon-information:before {
+  content: "\e902";
+}
+.admino-icon-lock-rounded:before {
+  content: "\e903";
+}
+.admino-icon-lock-rounded-open:before {
+  content: "\e904";
+}
+.admino-icon-arrow-circle-o-down:before {
+  content: "\f01a";
+}
+.admino-icon-arrow-circle-o-up:before {
+  content: "\f01b";
+}
+.admino-icon-plus-circle:before {
+  content: "\f055";
+}
+.admino-icon-minus-circle:before {
+  content: "\f056";
+}
+.admino-icon-times-circle:before {
+  content: "\f057";
+}
+.admino-icon-check-circle:before {
+  content: "\f058";
+}
+.admino-icon-question-circle:before {
+  content: "\f059";
+}
+.admino-icon-info-circle:before {
+  content: "\f05a";
+}
+.admino-icon-times-circle-o:before {
+  content: "\f05c";
+}
+.admino-icon-check-circle-o:before {
+  content: "\f05d";
+}
+.admino-icon-ban:before {
+  content: "\f05e";
+}
+.admino-icon-exclamation-circle:before {
+  content: "\f06a";
+}
+.admino-icon-filter:before {
+  content: "\f0b0";
+}
+.admino-icon-sort-alpha-asc:before {
+  content: "\f15d";
+}
+.admino-icon-sort-alpha-desc:before {
+  content: "\f15e";
+}
+.admino-icon-sort-amount-asc:before {
+  content: "\f160";
+}
+.admino-icon-sort-amount-desc:before {
+  content: "\f161";
+}
+.admino-icon-sort-numeric-asc:before {
+  content: "\f162";
+}
+.admino-icon-sort-numeric-desc:before {
+  content: "\f163";
+}
+.admino-icon-file-pdf:before {
+  content: "\f1c1";
+}
+.admino-icon-file-word:before {
+  content: "\f1c2";
+}
+.admino-icon-file-excel:before {
+  content: "\f1c3";
+}
+.admino-icon-file-powerpoint:before {
+  content: "\f1c4";
+}
+.admino-icon-file-image:before {
+  content: "\f1c5";
+}
+.admino-icon-commenting:before {
+  content: "\f27b";
+}
+.admino-icon-wifi-off:before {
+  content: "\e905";
+}
+.admino-icon-wifi-low:before {
+  content: "\e906";
+}
+.admino-icon-wifi-mid:before {
+  content: "\e907";
+}
+.admino-icon-wifi-full:before {
+  content: "\e908";
+}

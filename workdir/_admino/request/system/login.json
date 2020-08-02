@@ -1,0 +1,87 @@
+{
+  "setHandlerClass": "com.teamadmino.admino_backend.server.plugins.AdminoLogin",
+  "setFocus":{
+     "user":true
+  },
+  "setScreen": {
+    "id": "_admino:system/login",
+    "elements": [
+      {
+        "id": "logo",
+        "type": "image",
+        "src": "./assets/logo.png",
+        "width": "200px",
+        "height": "130px",
+        "align": "center"
+      },
+      {
+        "type": "text",
+        "id": "label",
+        "size": "2em",
+        "weight": "300",
+        "value": "Authentication Required",
+        "align": "center",
+        "color": "accent"
+      },
+      {
+        "id": "logingroup",
+        "type": "group",
+        "colSpan": 6,
+        "col": 4,
+        "showBorder": true,
+        "elements": [
+          {
+            "type": "input",
+            "id": "user",
+            "label": "Username"
+          },
+          {
+            "type": "input",
+            "inputType": "password",
+            "id": "password",
+            "label": "Password"
+          }
+        ]
+      },
+      {
+        "id": "buttongroup",
+        "type": "group",
+        "colSpan": 6,
+        "col": 4,
+//        "showBorder": true,
+        "elements": [
+          {
+            "row":1,
+            "colSpan":12,
+            "align":"center",
+            "type": "button",
+            "id": "login",
+            "icon": "account_circle",
+            "label": "Login",
+            "color":"accent",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:system/loginValidation"
+            }
+          }
+/*
+,
+          {
+            "row":1,
+            "col":5,
+            "type": "button",
+            "id": "forgot",
+            "icon": "sentiment_very_dissatisfied",
+            "label": "Forgot username / password",
+            "align":"right",
+            "action": {
+              "type": "backend",
+              "backendAction": "_admino:system/loginValidation"
+            }
+          }
+*/
+        ]
+      }
+    ]
+  }
+}
