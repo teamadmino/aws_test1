@@ -17,8 +17,7 @@
   "httpsPassword":"TeamAdmino2020",
 
   "serveFrontend":true,
-  "frontendPort":4300,
-  "useSandbox":true,
+  "frontendPort":80,
 
   "flagAllowUnknownElements":true
 
